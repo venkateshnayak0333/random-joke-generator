@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Random Joke Generator</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container" role="main">
+    <h1>Random Joke Generator</h1>
+
+    <div class="card" id="joke-card" aria-live="polite">
+      <div id="loading" class="muted" hidden>Loading…</div>
+
+      <div id="joke-area" hidden>
+        <p id="setup" class="setup"></p>
+        <p id="punchline" class="punchline"></p>
+      </div>
+
+      <div id="error" class="error" hidden></div>
+
+      <div class="controls">
+        <button id="new-joke" class="btn">New Joke</button>
+        <button id="copy" class="btn secondary" title="Copy joke">Copy</button>
+        <button id="share" class="btn secondary" title="Share joke">Share</button>
+      </div>
+    </div>
+
+    <footer class="footer muted">
+      Jokes from <a href="https://official-joke-api.appspot.com/" target="_blank" rel="noopener noreferrer">Official Joke API</a>.
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
